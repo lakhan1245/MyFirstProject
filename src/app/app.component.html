@@ -1,4 +1,4 @@
-<h1 class="red">Hello world</h1>
+<h1 [ngStyle]="headstyle">Hello world</h1>
 <p> app componenet start</p>
 <input type="button"  [disabled]='istrue' value="click me" (click)='abc()' />
 
@@ -8,5 +8,8 @@ Name:<input type="text" name="" value=""  [(ngModel)]='myName'>
 Enter Number:<input type="text" name="" value=""  [(ngModel)]='Num'>
 
 <div *ngIf='myfunc()'>Result is  <label id="sumRes">{{Result}}</label> </div>
+<img src="{{angularLogo}}"/>
+<img bind-src="angularLogo"/>
+<img [src]="angularLogo"  [style.width]="imagwidth"/>
 
-<p>app components end</p>
+<p [ngClass]="new1">app components end</p>

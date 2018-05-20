@@ -13,6 +13,23 @@ export class AppComponent {
   sum1:number=0;
    Num:number=0;
    result:number=0;
+   angularLogo="assets/images/lord.jpg"
+   imagwidth="500px";
+   headstyle={
+'color':'yellow',
+'font-size':'20px',
+'font-style':'italic'
+
+
+   }
+
+   new1={
+
+    'color':'pink',
+    'font-weight':'bold'
+
+
+   }
    
 
 
