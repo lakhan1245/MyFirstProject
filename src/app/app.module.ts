@@ -4,6 +4,7 @@ import { FormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import { LibraryService } from './library.service';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,FormsModule
   ],
-  providers: [],
+  providers: [LibraryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

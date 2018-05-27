@@ -1,3 +1,13 @@
 <h1 class="red">Hello world</h1>
 <p> app componenet start</p>
 
+
+<p [style.color]="'green'">This to test style throgh angulat</p>
+
+<p [ngStyle]='getstyle()'>This to test style throgh angulat2 for style by func</p>
+
+<p [class.background]="'true'">This to test style throgh angulat</p>
+<p [ngClass]='configObject2'>This to test style throgh angulat2 for class</p>
+<li *ngFor="let i of mybook3 ">{{i}}</li>
+
+<input type="text" [(ngModel)]="book" placeholder="enter BookName" /> <input type="button" value="Add Book" (click)="addBook(book)"    />
