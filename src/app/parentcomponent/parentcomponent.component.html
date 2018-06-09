@@ -1,0 +1,16 @@
+<p>
+  I am parentcomponent works!
+</p>
+<div class="refvariable">
+<h1>Template reference variable</h1>
+
+<app-childcomponent #refchild ></app-childcomponent>
+
+{{refchild.child}}:<button (click)='refchild.childMethod()'>click me</button>
+</div>
+
+<div ></div>
+
+  
+<app-child-input [sendtochild]='iamparentproperty'></app-child-input>
+<app-outputcomponent (change)='Parentmethod()'></app-outputcomponent>
