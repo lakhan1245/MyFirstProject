@@ -12,6 +12,9 @@ import { DefaultComponent } from './default/default.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { Feature1Module } from './feature1/feature1.module';
+import { Feature2Module } from './feature2/feature2.module';
+import { Feature3Module } from './feature3/feature3.module';
 
 
 @NgModule({
@@ -26,7 +29,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule,FormsModule,RoutingModuleModule
+    BrowserModule,FormsModule,RoutingModuleModule,Feature1Module,Feature2Module,Feature3Module
   ],
   providers: [],
   bootstrap: [AppComponent]
