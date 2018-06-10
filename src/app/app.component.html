@@ -1,11 +1,8 @@
-<h1 class="red">Hello world</h1>
-<p> app componenet start</p>
 
-<ul>
-    <li><a href="/c1">Home</a></li>
-    <li><a href="/c2">About us</a></li>
-    <li><a href="/c3">Contact us</a></li>
-</ul>
+<div id="master">
+<app-header></app-header>
+<div class="midcontent">
+<router-outlet></router-outlet></div>
 
-<router-outlet></router-outlet>
-
+<app-footer></app-footer>
+</div>

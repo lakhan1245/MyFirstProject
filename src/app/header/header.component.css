@@ -1,0 +1,29 @@
+#header{
+    min-height: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    color:red;
+    background: coral;
+    float: left;
+    width: 100%;
+}
+
+#header ul{
+    margin: 0px;
+    list-style-type: none;
+}
+
+#header ul li {
+ color: #fff;
+text-decoration: none;
+margin-top: 10px;
+float: left;
+padding-right: 30px;
+}
+
+#header ul li a{
+color:#fff;
+text-decoration: none;
+
+}
+

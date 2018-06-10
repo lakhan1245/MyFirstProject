@@ -1,0 +1,25 @@
+#side-section{
+float: left;
+width:100px;
+padding-right: 5px;
+background-color:coral;
+padding: 10px;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-right: 20px;
+
+}
+
+#side-section ul li{list-style-type: none;}
+#side-section ul li a{text-decoration: none; color:black;}
+
+#side-section ul{padding: 0px; margin-top: 10px;}
+
+#midsection{
+
+    float:left;
+    width: 1000px
+
+
+}
+#midsection h1{text-align:center;}

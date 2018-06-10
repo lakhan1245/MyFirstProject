@@ -10,6 +10,8 @@ import { C3Component } from './c3/c3.component';
 import { RoutingModuleModule } from './routing-module/routing-module.module';
 import { DefaultComponent } from './default/default.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     C2Component,
     C3Component,
     DefaultComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,FormsModule,RoutingModuleModule

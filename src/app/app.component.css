@@ -3,3 +3,18 @@
     font-size:20px;
     font-style: italic;
 }
+
+#master{
+    width:1200px;
+    margin:0 auto;
+}
+
+.midcontent{
+
+    width:100%;
+    float:left;
+    
+}
+
+.midcontent{text-align:center;}
+
