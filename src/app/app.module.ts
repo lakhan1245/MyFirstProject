@@ -15,6 +15,9 @@ import { FooterComponent } from './footer/footer.component';
 import { Feature1Module } from './feature1/feature1.module';
 import { Feature2Module } from './feature2/feature2.module';
 import { Feature3Module } from './feature3/feature3.module';
+import { EmptyContactService } from './empty-contact.service';
+import { RestrictService } from './restrict.service';
+import { SubscriptionService } from './subscription.service';
 
 
 @NgModule({
@@ -31,7 +34,7 @@ import { Feature3Module } from './feature3/feature3.module';
   imports: [
     BrowserModule,FormsModule,RoutingModuleModule,Feature1Module,Feature2Module,Feature3Module
   ],
-  providers: [],
+  providers: [EmptyContactService,RestrictService,SubscriptionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

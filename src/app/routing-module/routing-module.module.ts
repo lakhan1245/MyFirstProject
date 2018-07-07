@@ -5,15 +5,30 @@ import { C2Component } from '../c2/c2.component';
 import { C3Component } from '../c3/c3.component';
 import { DefaultComponent } from '../default/default.component';
 import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
+import { EmptyContactService } from '../empty-contact.service';
+import { RestrictService } from '../restrict.service';
 
 
 //step2
 const routes:Routes=[
-{path:'c1',component:C1Component},
-{path:'c2',component:C2Component},
-{path:'c3',component:C3Component},
-{path:'',component:DefaultComponent},
-{path:'**',component:PagenotfoundComponent},
+{
+  path:'About-us',
+  component:C1Component, children:[{
+    path:'contact-child',
+    component:C3Component}]
+},
+{
+  path:'Contact-Us',
+  component:C2Component ,canActivate : [RestrictService],canDeactivate : [EmptyContactService]},
+
+
+{
+  path:'',
+  component:DefaultComponent},
+
+{
+  path:'**',
+  component:PagenotfoundComponent},
 
 
 ];
@@ -22,7 +37,8 @@ const routes:Routes=[
   imports: [
 
 //step3
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+   // RouterModule.forChild(routes)
   
   ],
   exports:[RouterModule],
